@@ -3,16 +3,13 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build && npm run copy-www-to-docs",
-    "preview": "vite preview",
-    "copy-www-to-docs": "rimraf docs && copyfiles dist/**/* ./docs/ --up 1"
+    "build": "tsc && vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
     "@types/node": "^17.0.5",
-    "copyfiles": "^2.4.1",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "rimraf": "^3.0.2"
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
     "@types/react": "^17.0.33",
