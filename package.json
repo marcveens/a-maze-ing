@@ -3,8 +3,9 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "build": "tsc && vite build && npm run copy-www-to-docs",
+    "preview": "vite preview",
+    "copy-www-to-docs": "rimraf docs && copyfiles dist/**/* ./docs/ --up 1"
   },
   "dependencies": {
     "@types/node": "^17.0.5",
